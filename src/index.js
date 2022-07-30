@@ -1,5 +1,6 @@
 import ReactDOM from "react-dom/client";
 import Room from './/routs/Room';
+import SingleRoom from './/routs/SingleRoom';
 import {
   BrowserRouter,
   Routes,
@@ -15,7 +16,8 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App/>} />
-      <Route path="/room" element={<Room/>} />
+      <Route path="/rooms" element={<Room/>} />
+      <Route path="/singleRoom" element={<SingleRoom/>} />
     </Routes>
   </BrowserRouter>
 );

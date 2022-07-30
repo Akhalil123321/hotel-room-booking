@@ -1,12 +1,21 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react"
+import { Link } from "react-router-dom";
 import Services from '../components/Services'
 import ServicesData from "../data/ServicesData"
+import FeaturedRooms from './FeaturedRooms'
+import RoomData from '../data/RoomData'
 export default function Home(props) {
-    const oneservice = ServicesData.map(item => {
+    const oneservice = ServicesData.map(serviceItem => {
         return<Services
-        {...item}
-        id={item.id}
+        id={serviceItem.id}
+        {...serviceItem}
+        />
+    })
+    const roomData = RoomData.map(rommItem => {
+        return<FeaturedRooms
+        id={rommItem.id}
+        {...rommItem}
         />
     })
 return (
@@ -20,7 +29,7 @@ return (
             <h1 className="room-title">Luxurious Rooms</h1>
             <hr className="line"/>
             <p className="room-ofers">Deluxe Rooms Starting At $200</p>
-            <button className="our-rooms-btn">OUR ROOMS</button>
+            <Link to="/rooms"><button className="our-rooms-btn">OUR ROOMS</button></Link>
         </div>
         </div>
         <div className="services">
@@ -33,7 +42,9 @@ return (
         <div>
             <h2 className="head-name">Featured Rooms</h2>
             <hr className="line mini"/>
-            
+            <div className="featured-room-container">
+            {roomData}
+            </div>
         </div>
     </main>
 )

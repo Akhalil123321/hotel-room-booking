@@ -1,6 +1,11 @@
 import React from "react"
-export default function Home() {
+import NavBar from '../components/NavBar'
+import Footer from '../components/Footer'
+export default function SingleRoom() {
 return (
-    <div></div>
+    <div>
+        <NavBar/>
+        <Footer/>
+    </div>
 )
 }
