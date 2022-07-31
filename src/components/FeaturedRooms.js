@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom";
+import SingleRoomData from '../data/SingleRoomData'
 export default function Services(props) {
     const[shadowProperty,setShadowProperty]=React.useState(false)
 function mouseEnter(){
@@ -10,6 +11,10 @@ function mouseLeave(){
 }
 const boxShadow = shadowProperty?'box-shadow':''
 const boxBtn = shadowProperty?'onscreen-btn':'onscreen-btn over'
+function handleClick(){
+    SingleRoomData.push(props)
+    SingleRoomData.shift()
+}
 return (
     <div 
     className="featured-room-one-container" 
@@ -24,7 +29,7 @@ return (
     <div className="featured-room-type"><p>{props.type}</p></div>
     <Link to="/singleRoom">
         <div className={boxShadow}>
-            <button className={boxBtn}>
+            <button className={boxBtn} onClick={handleClick}>
                 FEATURE
             </button>
         </div>
