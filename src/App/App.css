@@ -523,12 +523,17 @@ letter-spacing: var(--mainSpacing);
         flex-wrap: wrap;
         margin: 40px auto;
         gap:2rem;
+        
     }
     .extras-p{
         width: 28vw;
     }
     @media screen and (max-width:700px) {
+        .extras{
+            width:78%;
+        }
         .extras-p{
-            width: 100%;
+            width: 78%;
         }
     }
+/*end of single room*/

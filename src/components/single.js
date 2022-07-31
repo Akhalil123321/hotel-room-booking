@@ -12,7 +12,7 @@ return (
         <div className="room-detailes single-room">
             <h1 className="our-room-title single-room-width">{props.type} Room</h1>
             <hr className="line"/>
-            <p className="our-room-ofers single-offer">Deluxe Rooms Starting At $200</p>
+            <p className="our-room-ofers single-offer">Rooms are equipped with all necessities</p>
             <Link to="/rooms"><button className="our-rooms-btn">BACK TO {props.back}</button></Link>
         </div>
         </div>

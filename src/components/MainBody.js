@@ -28,7 +28,7 @@ return (
         <div className="room-detailes">
             <h1 className="room-title">Luxurious Rooms</h1>
             <hr className="line"/>
-            <p className="room-ofers">Deluxe Rooms Starting At $200</p>
+            <p className="room-ofers">Deluxe Rooms Starting At $299</p>
             <Link to="/rooms"><button className="our-rooms-btn">OUR ROOMS</button></Link>
         </div>
         </div>

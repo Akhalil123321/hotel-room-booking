@@ -60,7 +60,7 @@ return (
         <div className="room-detailes our-room">
             <h1 className="our-room-title room-width">Our Rooms</h1>
             <hr className="line"/>
-            <p className="our-room-ofers">Deluxe Rooms Starting At $200</p>
+            <p className="our-room-ofers">All types of rooms at all prices</p>
             <Link to="/"><button className="our-rooms-btn">RETURN HOME</button></Link>
         </div>
         </div>
