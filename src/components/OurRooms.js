@@ -15,7 +15,6 @@ export default function Home(props) {
     })
     console.log(forms);
 React.useEffect(()=>{
-    setRoomsArray(AllRoomData)
     // room type
     forms.RoomsType ==='single' && setRoomsArray(roomsArray.filter(item=>item.RoomsType.includes('single')))
     forms.RoomsType ==='double' && setRoomsArray(roomsArray.filter(item=>item.RoomsType.includes('double')))
@@ -49,7 +48,7 @@ function handleCange(event){
             [name]:type === 'checkbox' ? checked : value
         }
     })
-    
+    setRoomsArray(AllRoomData)
 }
 return (
     <main>

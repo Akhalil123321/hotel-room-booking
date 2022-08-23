@@ -286,8 +286,10 @@ letter-spacing: var(--mainSpacing);
     transition: var(--mainTransition);
     display: flex;
 }
+.card-btn-link{
+    margin: auto;
+}
 .onscreen-btn{
-margin: auto;
 font-size:1rem;
 padding: .5rem 1rem;
 border: .2em solid var(--primaryColor);

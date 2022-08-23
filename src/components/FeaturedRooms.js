@@ -27,13 +27,13 @@ return (
         </div>
     <img src={`./img/jpeg/${props.image}`} alt='' className="featured-room-image"/>
     <div className="featured-room-type"><p>{props.type}</p></div>
-    <Link to="/singleRoom">
         <div className={boxShadow}>
-            <button className={boxBtn} onClick={handleClick}>
-                FEATURE
-            </button>
+            <Link to="/singleRoom" className="card-btn-link">
+                <button className={boxBtn} onClick={handleClick}>
+                    FEATURE
+                </button>
+            </Link>
         </div>
-    </Link>
     
     </div>
 )
